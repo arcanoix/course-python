@@ -21,12 +21,12 @@ for i in miEmail:
 	if(i=="@" ):
 		contador=contador+1
 
-	if contador==1  and len(parte_local)<=64 and len(dominio)<=254 and dominio==dominio.lower():
-		for i in (parte_local+dominio):
-			if  i in  caracteres_no:
-				print("El email no es correcto")
-				break
-			else:
-				print("El email es correcto")
-	else:
-		print("El email no es correcto")﻿
+if contador==1  and len(parte_local)<=64 and len(dominio)<=254 and dominio==dominio.lower():
+	for i in (parte_local+dominio):
+		if  i in  caracteres_no:
+			print("El email no es correcto")
+			break;
+		else:
+			print("El email es correcto")
+else:
+	print("El email no es correcto")﻿
